@@ -146,7 +146,7 @@ def process_tusimple_dataset(src_dir):
     os.makedirs(traing_folder_path, exist_ok=True)
     os.makedirs(testing_folder_path, exist_ok=True)
 
-    for json_label_path in glob.glob(r'Lane-detection/data/label*.json'.format(src_dir)):
+    for json_label_path in glob.glob(r'Lane-detection/data/label*0531.json'.format(src_dir)):
         json_label_name = ops.split(json_label_path)[1]
 
         shutil.copyfile(json_label_path, ops.join(traing_folder_path, json_label_name))
