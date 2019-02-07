@@ -58,3 +58,7 @@ docs/_build/
 target/
 
 *.jpg
+
+Lane-detection/data/
+
+machine learning/clips/training/train\.txt
